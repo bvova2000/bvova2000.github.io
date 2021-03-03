@@ -45,15 +45,15 @@
             curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
 
-            $res = curl_exec($curl);
-            $res = json_decode($res, true);
-             if ($res['redirectUrl']) {
-                // header("Location: ".$res['redirectUrl']);
-                 header("Location: success.php"."?"."t1=".$post['t1']);
-              }
+            // $res = curl_exec($curl);
+            // $res = json_decode($res, true);
+            //  if ($res['redirectUrl']) {
+            //     // header("Location: ".$res['redirectUrl']);
+            //      header("Location: success.php"."?"."t1=".$post['t1']);
+            //   }
             
-            print($res['message']);
-            curl_close($curl);
+            // print($res['message']);
+            // curl_close($curl);
            
 
 

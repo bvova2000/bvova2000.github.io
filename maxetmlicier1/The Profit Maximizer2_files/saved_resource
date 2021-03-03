@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Max Your Profit</title>
+    <base href="/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet"  id="bootstrapRtl" href=""/>
+  </head>
+  <body>
+    <offers-root></offers-root>
+    <style>
+      .btc-widget-block {
+        z-index: 99999;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+      }
+      @media (max-width: 500px) {
+        .btc-widget-block {
+          display: none;
+        }
+      }
+    </style>
+    <div class="btc-widget-block">
+      ​
+      <!--    @author https://github.com/cryto-software/currency-info
+              Widget:
+              available сryptocurrencies: BTC, XRP, XMR, ETH, LTC;
+              available currencies: USD, EUR, GB;
+              add an html tag with id set in "el" property;
+       -->
+      ​
+      <div id="btc-widget"></div>
+    </div>
+    <script src="https://currencyinfo.net/crypto/widget.js"></script>
+    <script>
+      Currency.init({
+        el: '#btc-widget',
+        currency: 'BTC',
+        widget: 'block'
+      })
+    </script>
+  <script type="text/javascript" src="runtime.6a1dfd8af8dcb2cab549.js"></script><script type="text/javascript" src="polyfills.5ef318d2cc9ff1bb01ce.js"></script><script type="text/javascript" src="styles.8c188f87311e8b5efd05.js"></script><script type="text/javascript" src="scripts.f8c82032f1345bc7002d.js"></script><script type="text/javascript" src="main.d3b011786a2554205553.js"></script></body>
+</html>
